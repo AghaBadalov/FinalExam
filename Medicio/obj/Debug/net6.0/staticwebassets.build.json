@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oYVt3njJxa7WIuxkH3CHHH+0tYNqANh6irlsLXcBQpo=",
+  "Hash": "nVF8c4H7vVPmVkkhkWysmrBpnmO0gXLuleTWeKuQQQM=",
   "Source": "Medicio",
   "BasePath": "_content/Medicio",
   "Mode": "Default",
@@ -33896,6 +33896,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\doctors\\58a64efd-cadb-4ab7-9748-2e0a48edf3e7team-4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\8940f67b-ba0d-42bd-94fe-6fb657cc9ab9team-3.jpg",
+      "SourceId": "Medicio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\",
+      "BasePath": "_content/Medicio",
+      "RelativePath": "uploads/doctors/8940f67b-ba0d-42bd-94fe-6fb657cc9ab9team-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\doctors\\8940f67b-ba0d-42bd-94fe-6fb657cc9ab9team-3.jpg"
     }
   ]
 }

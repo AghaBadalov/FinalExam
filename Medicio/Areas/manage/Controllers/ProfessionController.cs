@@ -1,11 +1,15 @@
 ﻿using Medicio.DAL;
 using Medicio.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Build.Framework;
+using System.Data;
 
 namespace Medicio.Areas.manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
+
 
     public class ProfessionController : Controller
     {

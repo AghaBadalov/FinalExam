@@ -1,15 +1,25 @@
+using Medicio.Areas.manage.Services;
 using Medicio.DAL;
+using Medicio.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddScoped<LayoutService>();
 builder.Services.AddDbContext<AppDbContext>(opt=>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("default"));
 });
-
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+{
+    opt.Password.RequiredUniqueChars = 0;
+    opt.Password.RequireNonAlphanumeric = false;
+    opt.Password.RequiredLength = 8;
+    opt.User.RequireUniqueEmail = false;
+}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +34,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 app.UseEndpoints(endpoints =>
