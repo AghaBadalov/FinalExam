@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lOItNg1XLtYdkmRhGn0ddDuZEfJZZYU1qJvSPo5vQLY=",
+  "Hash": "LIX2Lk3wHu+oRnTNXzn0Bd911ZKJDm4V0sBx5GO7mRQ=",
   "Source": "Medicio",
   "BasePath": "_content/Medicio",
   "Mode": "Default",
@@ -2548,6 +2548,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\manage\\js\\demo\\datatables-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\manage\\js\\main.js",
+      "SourceId": "Medicio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\",
+      "BasePath": "_content/Medicio",
+      "RelativePath": "manage/js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manage\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\manage\\js\\sb-admin-2.js",
@@ -33915,12 +33932,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\doctors\\58a64efd-cadb-4ab7-9748-2e0a48edf3e7team-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\fb2729a2-6879-47a8-851f-c64952bebeceteam-1.jpg",
+      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\faf94583-d656-474e-aa70-16596e8f396cteam-2.jpg",
       "SourceId": "Medicio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\",
       "BasePath": "_content/Medicio",
-      "RelativePath": "uploads/doctors/fb2729a2-6879-47a8-851f-c64952bebeceteam-1.jpg",
+      "RelativePath": "uploads/doctors/faf94583-d656-474e-aa70-16596e8f396cteam-2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33929,7 +33946,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\doctors\\fb2729a2-6879-47a8-851f-c64952bebeceteam-1.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\doctors\\faf94583-d656-474e-aa70-16596e8f396cteam-2.jpg"
     }
   ]
 }

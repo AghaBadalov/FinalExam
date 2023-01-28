@@ -3,6 +3,9 @@
 @{
     int counter = ((Model.ActivePage - 1) * 4); 
 }
+@section Css{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.1/sweetalert2.min.css" integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+}
 <table class="table">
     <thead>
         <a asp-action="create" asp-controller="doctor"  class="btn btn-success">Create</a>
@@ -40,7 +43,7 @@
                 </td>
                 <td>
                     <a asp-action="update" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-primary">Update</a>
-                    <a asp-action="softdelete" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    <a asp-action="softdelete" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-danger delete-button">Delete</a>
 
                 </td>
                 
@@ -69,3 +72,6 @@
 </nav>
     </form>
 </div>
+@section Script{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.1/sweetalert2.min.js" integrity="sha512-vCI1Ba/Ob39YYPiWruLs4uHSA3QzxgHBcJNfFMRMJr832nT/2FBrwmMGQMwlD6Z/rAIIwZFX8vJJWDj7odXMaw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+}

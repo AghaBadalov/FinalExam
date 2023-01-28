@@ -30,6 +30,8 @@
 
     <!-- Custom styles for this template-->
     <link href="~/manage/css/sb-admin-2.min.css" rel="stylesheet">
+    @RenderSection("Css",required:false);
+
 
 </head>
 
@@ -368,6 +370,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/manage/js/sb-admin-2.min.js"></script>
+    <script src="~/manage/js/main.js"></script>
 
     <!-- Page level plugins -->
     <script src="~/manage/vendor/chart.js/Chart.min.js"></script>
@@ -375,6 +378,7 @@
     <!-- Page level custom scripts -->
     <script src="~/manage/js/demo/chart-area-demo.js"></script>
     <script src="~/manage/js/demo/chart-pie-demo.js"></script>
+    @RenderSection("Script",required:false);
 
 </body>
 
