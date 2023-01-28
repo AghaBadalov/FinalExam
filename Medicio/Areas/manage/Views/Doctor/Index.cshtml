@@ -1,0 +1,50 @@
+﻿@model List<Doctor>
+@{
+    int counter = 0;
+}
+<table class="table">
+    <thead>
+        <a asp-action="create" asp-controller="doctor"  class="btn btn-success">Create</a>
+
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Profession</th>
+            <th scope="col">TTUrl</th>
+            <th scope="col">IGUrl</th>
+            <th scope="col">LNUrl</th>
+            <th scope="col">FBURl</th>
+            <th scope="col">Image</th>
+
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            counter++;
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Profession.Name</td>
+                <td>@item.TTUrl</td>
+                <td>@item.IGUrl</td>
+                <td>@item.LNUrl</td>
+                <td>@item.FBUrl</td>
+                <td>
+                    <img style="max-width:100px"
+                     src="~/uploads/doctors/@item.ImageUrl">
+                </td>
+                <td>
+                    <a asp-action="update" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-primary">Update</a>
+                    <a asp-action="delete" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+
+                </td>
+                
+            </tr>
+        }
+        
+    </tbody>
+</table>

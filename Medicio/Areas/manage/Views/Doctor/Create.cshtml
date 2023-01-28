@@ -1,0 +1,45 @@
+﻿@model Doctor 
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Name"  class="form-label">Name</label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+        
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImageFile" class="form-label">Image</label>
+        <input asp-for="ImageFile" class="form-control">
+        <span asp-validation-for="ImageFile" class="text-danger"></span>
+
+    </div>
+    <div>
+        <select asp-for="ProfessionId" asp-items="@(new SelectList(ViewBag.Professions,"Id","Name"))"></select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="TTUrl" class="form-label">TTUrl</label>
+        <input asp-for="TTUrl" class="form-control">
+        <span asp-validation-for="TTUrl" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="FBUrl" class="form-label">FBUrl</label>
+        <input asp-for="FBUrl" class="form-control">
+        <span asp-validation-for="FBUrl" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="IGUrl" class="form-label">IGUrl</label>
+        <input asp-for="IGUrl" class="form-control">
+        <span asp-validation-for="IGUrl" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="LNUrl" class="form-label">LNUrl</label>
+        <input asp-for="LNUrl" class="form-control">
+        <span asp-validation-for="LNUrl" class="text-danger"></span>
+
+    </div>
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
