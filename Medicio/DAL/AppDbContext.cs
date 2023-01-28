@@ -13,5 +13,6 @@ namespace Medicio.DAL
         public DbSet<Profession> Professions { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<Setting> SettingUsers { get; set; }
     }
 }

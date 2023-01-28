@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nVF8c4H7vVPmVkkhkWysmrBpnmO0gXLuleTWeKuQQQM=",
+  "Hash": "lOItNg1XLtYdkmRhGn0ddDuZEfJZZYU1qJvSPo5vQLY=",
   "Source": "Medicio",
   "BasePath": "_content/Medicio",
   "Mode": "Default",
@@ -33881,6 +33881,23 @@
       "OriginalItemSpec": "wwwroot\\manage\\vendor\\jquery-easing\\jquery.easing.min.js"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\477c30df-f794-45a0-9720-f06ecddaa5ecteam-1.jpg",
+      "SourceId": "Medicio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\",
+      "BasePath": "_content/Medicio",
+      "RelativePath": "uploads/doctors/477c30df-f794-45a0-9720-f06ecddaa5ecteam-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\doctors\\477c30df-f794-45a0-9720-f06ecddaa5ecteam-1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\58a64efd-cadb-4ab7-9748-2e0a48edf3e7team-4.jpg",
       "SourceId": "Medicio",
       "SourceType": "Discovered",
@@ -33898,12 +33915,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\doctors\\58a64efd-cadb-4ab7-9748-2e0a48edf3e7team-4.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\8940f67b-ba0d-42bd-94fe-6fb657cc9ab9team-3.jpg",
+      "Identity": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\uploads\\doctors\\fb2729a2-6879-47a8-851f-c64952bebeceteam-1.jpg",
       "SourceId": "Medicio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Medicio\\Medicio\\wwwroot\\",
       "BasePath": "_content/Medicio",
-      "RelativePath": "uploads/doctors/8940f67b-ba0d-42bd-94fe-6fb657cc9ab9team-3.jpg",
+      "RelativePath": "uploads/doctors/fb2729a2-6879-47a8-851f-c64952bebeceteam-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33912,7 +33929,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\doctors\\8940f67b-ba0d-42bd-94fe-6fb657cc9ab9team-3.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\doctors\\fb2729a2-6879-47a8-851f-c64952bebeceteam-1.jpg"
     }
   ]
 }

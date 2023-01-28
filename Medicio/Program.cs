@@ -1,6 +1,7 @@
 using Medicio.Areas.manage.Services;
 using Medicio.DAL;
 using Medicio.Models;
+using Medicio.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<NormalLayoutService>();
 //builder.Services.AddScoped<LayoutService>();
 builder.Services.AddDbContext<AppDbContext>(opt=>
 {

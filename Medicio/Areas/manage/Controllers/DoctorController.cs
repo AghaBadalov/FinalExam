@@ -21,10 +21,19 @@ namespace Medicio.Areas.manage.Controllers
             _dbContext = dbContext;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            List<Doctor> doctors = _dbContext.Doctors.Include(x=>x.Profession).ToList();
-            return View(doctors);
+            var query=_dbContext.Doctors.Include(x=>x.Profession).Where(x=>x.IsDeleted==false).AsQueryable();
+            PaginatedList<Doctor> doctors1 =PaginatedList<Doctor>.Create(query, 2, page);
+            //List<Doctor> doctors = _dbContext.Doctors.Include(x=>x.Profession).ToList();
+            return View(doctors1);
+        }
+        public IActionResult DeletedDoctor(int page = 1)
+        {
+            var query = _dbContext.Doctors.Include(x => x.Profession).Where(x => x.IsDeleted == true).AsQueryable();
+            PaginatedList<Doctor> doctors1 = PaginatedList<Doctor>.Create(query, 2, page);
+            //List<Doctor> doctors = _dbContext.Doctors.Include(x=>x.Profession).ToList();
+            return View(doctors1);
         }
         public IActionResult Create()
         {
@@ -115,6 +124,23 @@ namespace Medicio.Areas.manage.Controllers
                 System.IO.File.Delete(path);
             }
             _dbContext.Doctors.Remove(doctor);
+            _dbContext.SaveChanges();
+            return RedirectToAction("deleteddoctor");
+        }
+        public IActionResult SoftDelete(int id)
+        {
+            Doctor doctor = _dbContext.Doctors.FirstOrDefault(x => x.Id == id);
+            if (doctor == null) return NotFound();
+            doctor.IsDeleted = true;
+            _dbContext.SaveChanges();
+
+            return RedirectToAction("index");
+        }
+        public IActionResult Repair(int id)
+        {
+            Doctor doctor = _dbContext.Doctors.FirstOrDefault(x => x.Id == id);
+            if (doctor == null) return NotFound();
+            doctor.IsDeleted = false;
             _dbContext.SaveChanges();
             return RedirectToAction("index");
         }

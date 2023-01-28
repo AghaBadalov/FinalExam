@@ -1,6 +1,7 @@
-﻿@model List<Doctor>
+﻿@using Medicio.Helpers
+@model PaginatedList<Doctor>
 @{
-    int counter = 0;
+    int counter = ((Model.ActivePage - 1) * 4); 
 }
 <table class="table">
     <thead>
@@ -39,7 +40,7 @@
                 </td>
                 <td>
                     <a asp-action="update" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-primary">Update</a>
-                    <a asp-action="delete" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    <a asp-action="softdelete" asp-controller="doctor" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
 
                 </td>
                 
@@ -48,3 +49,23 @@
         
     </tbody>
 </table>
+<div style="margin-left:500px">
+    <form>
+        <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    @if(Model.HasPrevious){
+                    <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(Model.ActivePage-1)">Previous</a></li>
+    }
+   
+                @for (int i = 1; i <= Model.TotalPageCount; i++)
+                {
+                    <li class="page-item @(Model.ActivePage==i? "active" : "" )"><a class="page-link" asp-route-page="@i">@i</a></li>
+                }
+    
+    @if(Model.HasNext){
+                    <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(Model.ActivePage+1)">Next</a></li>
+    }
+  </ul>
+</nav>
+    </form>
+</div>
